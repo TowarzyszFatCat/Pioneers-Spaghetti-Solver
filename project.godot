@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Pioneer's Spaghetti Solver"
+config/description="Advanced factory planner and logistics calculator for Satisfactory."
+config/version="0.1.0"
+run/main_scene="uid://c7j75yctcnuxk"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="PioneersSpaghettiSolver"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+run/low_processor_mode=true
+boot_splash/bg_color=Color(0.101960786, 0.11372549, 0.12941177, 1)
+boot_splash/stretch_mode=0
+boot_splash/image="uid://cl564gjkxdcpw"
+config/icon="uid://cl564gjkxdcpw"
+config/macos_native_icon="res://icon.icns"
+config/windows_native_icon="res://icon.ico"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://data/": "red",
+"res://images/": "red",
+"res://scripts/": "orange"
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

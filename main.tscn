@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c7j75yctcnuxk"]
+
+[ext_resource type="Script" uid="uid://cfdc0jv62jdjv" path="res://scripts/main.gd" id="1_ig7tw"]
+
+[node name="Graph" type="GraphEdit" unique_id=1919407415]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+grid_pattern = 1
+zoom = 0.23256795
+zoom_min = 0.05
+zoom_max = 1.0
+show_arrange_button = false
+script = ExtResource("1_ig7tw")

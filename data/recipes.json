@@ -1,0 +1,160 @@
+{
+	"item_colors": {
+		"Iron Ore": "#f4a460",
+		"Copper Ore": "#ff7f50",
+		"Coal": "#696969",
+		"Limestone": "#d2b48c",
+		"Iron Ingot": "#778899",
+		"Copper Ingot": "#ff4500",
+		"Steel Ingot": "#4682b4",
+		"Concrete": "#8fbc8f",
+		"Iron Plate": "#c0c0c0",
+		"Iron Rod": "#a9a9a9",
+		"Screw": "#4169e1",
+		"Wire": "#daa520",
+		"Cable": "#9370db",
+		"Reinforced Iron Plate": "#66cdaa",
+		"Rotor": "#5f9ea0",
+		"Modular Frame": "#6495ed",
+		"Steel Beam": "#708090",
+		"Steel Pipe": "#b0c4de",
+		"Encased Industrial Beam": "#bdb76b",
+		"Stator": "#cd5c5c",
+		"Motor": "#dc143c"
+	},
+	"recipes": {
+		"miner_iron": {
+			"category": "Extraction",
+			"title": "Miner Mk.1 (Iron Ore)",
+			"power": 5.0,
+			"inputs": [],
+			"outputs": [{"item": "Iron Ore", "rate": 60.0}]
+		},
+		"miner_copper": {
+			"category": "Extraction",
+			"title": "Miner Mk.1 (Copper Ore)",
+			"power": 5.0,
+			"inputs": [],
+			"outputs": [{"item": "Copper Ore", "rate": 60.0}]
+		},
+		"miner_coal": {
+			"category": "Extraction",
+			"title": "Miner Mk.1 (Coal)",
+			"power": 5.0,
+			"inputs": [],
+			"outputs": [{"item": "Coal", "rate": 60.0}]
+		},
+		"miner_limestone": {
+			"category": "Extraction",
+			"title": "Miner Mk.1 (Limestone)",
+			"power": 5.0,
+			"inputs": [],
+			"outputs": [{"item": "Limestone", "rate": 60.0}]
+		},
+		"smelter_iron": {
+			"category": "Smelting",
+			"title": "Smelter (Iron Ingot)",
+			"power": 4.0,
+			"inputs": [{"item": "Iron Ore", "rate": 30.0}],
+			"outputs": [{"item": "Iron Ingot", "rate": 30.0}]
+		},
+		"smelter_copper": {
+			"category": "Smelting",
+			"title": "Smelter (Copper Ingot)",
+			"power": 4.0,
+			"inputs": [{"item": "Copper Ore", "rate": 30.0}],
+			"outputs": [{"item": "Copper Ingot", "rate": 30.0}]
+		},
+		"foundry_steel": {
+			"category": "Smelting",
+			"title": "Foundry (Steel Ingot)",
+			"power": 16.0,
+			"inputs": [{"item": "Iron Ore", "rate": 45.0}, {"item": "Coal", "rate": 45.0}],
+			"outputs": [{"item": "Steel Ingot", "rate": 45.0}]
+		},
+		"const_concrete": {
+			"category": "Constructor",
+			"title": "Constructor (Concrete)",
+			"power": 4.0,
+			"inputs": [{"item": "Limestone", "rate": 45.0}],
+			"outputs": [{"item": "Concrete", "rate": 15.0}]
+		},
+		"const_plate": {
+			"category": "Constructor",
+			"title": "Constructor (Iron Plate)",
+			"power": 4.0,
+			"inputs": [{"item": "Iron Ingot", "rate": 30.0}],
+			"outputs": [{"item": "Iron Plate", "rate": 20.0}]
+		},
+		"const_rod": {
+			"category": "Constructor",
+			"title": "Constructor (Iron Rod)",
+			"power": 4.0,
+			"inputs": [{"item": "Iron Ingot", "rate": 15.0}],
+			"outputs": [{"item": "Iron Rod", "rate": 15.0}]
+		},
+		"const_screw": {
+			"category": "Constructor",
+			"title": "Constructor (Screw)",
+			"power": 4.0,
+			"inputs": [{"item": "Iron Rod", "rate": 10.0}],
+			"outputs": [{"item": "Screw", "rate": 40.0}]
+		},
+		"const_wire": {
+			"category": "Constructor",
+			"title": "Constructor (Wire)",
+			"power": 4.0,
+			"inputs": [{"item": "Copper Ingot", "rate": 15.0}],
+			"outputs": [{"item": "Wire", "rate": 30.0}]
+		},
+		"const_cable": {
+			"category": "Constructor",
+			"title": "Constructor (Cable)",
+			"power": 4.0,
+			"inputs": [{"item": "Wire", "rate": 60.0}],
+			"outputs": [{"item": "Cable", "rate": 30.0}]
+		},
+		"const_steel_beam": {
+			"category": "Constructor",
+			"title": "Constructor (Steel Beam)",
+			"power": 4.0,
+			"inputs": [{"item": "Steel Ingot", "rate": 60.0}],
+			"outputs": [{"item": "Steel Beam", "rate": 15.0}]
+		},
+		"const_steel_pipe": {
+			"category": "Constructor",
+			"title": "Constructor (Steel Pipe)",
+			"power": 4.0,
+			"inputs": [{"item": "Steel Ingot", "rate": 30.0}],
+			"outputs": [{"item": "Steel Pipe", "rate": 20.0}]
+		},
+		"ass_rip": {
+			"category": "Assembler",
+			"title": "Assembler (Reinforced Iron Plate)",
+			"power": 15.0,
+			"inputs": [{"item": "Iron Plate", "rate": 30.0}, {"item": "Screw", "rate": 60.0}],
+			"outputs": [{"item": "Reinforced Iron Plate", "rate": 5.0}]
+		},
+		"ass_rotor": {
+			"category": "Assembler",
+			"title": "Assembler (Rotor)",
+			"power": 15.0,
+			"inputs": [{"item": "Iron Rod", "rate": 20.0}, {"item": "Screw", "rate": 100.0}],
+			"outputs": [{"item": "Rotor", "rate": 4.0}]
+		},
+		"ass_mod_frame": {
+			"category": "Assembler",
+			"title": "Assembler (Modular Frame)",
+			"power": 15.0,
+			"inputs": [{"item": "Reinforced Iron Plate", "rate": 3.0}, {"item": "Iron Rod", "rate": 12.0}],
+			"outputs": [{"item": "Modular Frame", "rate": 2.0}]
+		},
+		"ass_motor": {
+			"category": "Assembler",
+			"title": "Assembler (Motor)",
+			"power": 15.0,
+			"inputs": [{"item": "Rotor", "rate": 10.0}, {"item": "Stator", "rate": 10.0}],
+			"outputs": [{"item": "Motor", "rate": 5.0}]
+		}
+	}
+}
