@@ -183,3 +183,8 @@ Before submitting a Pull Request, please read [**CONTRIBUTING.md**](CONTRIBUTING
   * ❌ Commercial use, monetization, or paid distribution (including Steam, mobile stores, or paid services) by anyone other than the original copyright holder (**TowarzyszFatCat / ChonkChum**) is strictly prohibited.
 * **Warranty Disclaimer:** This software is provided *"as is"*, without warranty of any kind, and may contain bugs or calculation inaccuracies.
 * **Affiliation Disclaimer:** *Pioneer's Spaghetti Solver* is an independent community-made tool and is not affiliated with, endorsed, or sponsored by **Coffee Stain Studios AB**. *Satisfactory* and all related game trademarks and assets belong to their respective owners.
+
+## ⚖️ Legal Notice & Assets Credit
+Pioneer's Spaghetti Solver is an unofficial, community-made fan project and is not affiliated with, endorsed by, or connected to **Coffee Stain Studios** in any way. 
+All in-game assets, item icons, and related graphics used within this software are the property and copyright of Coffee Stain Studios. Images were sourced via the [Official Satisfactory Wiki](https://satisfactory.wiki.gg/).
+This software is provided for free, non-commercial use by the Satisfactory community.
