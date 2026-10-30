@@ -21,7 +21,7 @@
 
 ---
 
-## 🎬 Video Showcase
+## Video Showcase
 
 Click the image below to watch **Pioneer's Spaghetti Solver** in action on YouTube:
 
@@ -29,109 +29,87 @@ Click the image below to watch **Pioneer's Spaghetti Solver** in action on YouTu
   <a href="https://www.youtube.com/watch?v=Vj9e2gJjwfY" target="_blank">
 	<img src="https://img.youtube.com/vi/Vj9e2gJjwfY/maxresdefault.jpg" alt="Watch the PSS Trailer on YouTube" width="820" style="border-radius: 8px; border: 2px solid #FAB757;" />
   </a>
-  <br>
-  <sub><b>Click to watch feature overview</b></sub>
 </div>
 
----
 
-## ✨ Key Features
+## Key Features
 
-### 🔗 1. Node Schematic & Interactive World Map
-* **High-Performance Node Graph:** Connect machines, extractors, power plants, splitters, and storage blocks with smooth drag-and-drop wires.
-* **Custom Wire Routing:** Choose between smooth Bézier curves or **90° Orthogonal Wires**. Double-click any wire to insert custom routing waypoints (`Reroute Pins` also supported).
-* **Live Logistics Badges:** Wires dynamically display item flow rates (`/m` or `m³/m`) and required Conveyor Belt (`Mk.1` – `Mk.6`) or Pipeline (`Mk.1` – `Mk.2`) tiers, highlighting overloaded lines in red.
-* **Nested Factories (Outposts):** Select any group of nodes and press `Ctrl + G` to pack them into a modular **Factory** sub-graph. Inputs and outputs automatically synchronize via `Receiver` and `Transmitter` nodes.
-* **Compact UI Mode:** Declutter massive megabase schematics with a single click—hide text descriptions and display only clean icons and numbers.
+### 1. Node Schematic & Interactive World Map
+* **High-Performance Node Graph:** Connect machines, extractors, power plants, splitters, and storage blocks using smooth Bézier curves or **90° Orthogonal Wires** with custom routing waypoints (`Reroute Pins` supported).
+* **Live Logistics Badges:** Wires display item flow rates (`/m` or `m³/m`) and required Conveyor Belt (`Mk.1` – `Mk.6`) or Pipeline (`Mk.1` – `Mk.2`) tiers, highlighting overloaded lines.
+* **Nested Factories (Outposts):** Group selected nodes (`Ctrl + G`) into modular **Factory** sub-graphs with automatic input (`Receiver`) and output (`Transmitter`) port synchronization.
+* **Compact UI Mode:** Hide text descriptions and display only icons and numbers for large megabase schematics.
 
-### 📐 2. 2D Foundation Grid Planner (CAD Mode)
+### 2. 2D Foundation Grid Planner (CAD Mode)
 Switch directly from your logical node graph to a **1:1 scale 2D Foundation Grid** (`1 Foundation = 8m × 8m`) to plan the physical layout of your factory:
-* **Multi-Floor Architecture (`B5` to `P25`):** Build vertically across 30+ floors. Toggle the **👻 Floor Below (Onion Skin)** blueprint view to align upper floors with lower infrastructure.
-* **Physical 2m Conveyor Belt Routing:** Route physical belts port-to-port with two dedicated modes (`T`): **90° Straight** (authentic 2m turning radius) or **Smooth Curve**, complete with rotatable conveyor poles (`R`).
-* **Multi-Floor Conveyor Lifts:** Place 2-step vertical **Conveyor Lifts** (`[8]` / `[V]`) that physically connect floors and automatically check for shaft collisions across all intermediate levels.
+* **Multi-Floor Architecture (`B5` to `P25`):** Build across 30+ vertical floors with an **Onion Skin (Floor Below)** preview to align upper floors with lower infrastructure.
+* **Physical 2m Conveyor Belt Routing:** Route physical belts port-to-port in **90° Straight** mode (authentic 2m turning radius) or **Smooth Curve** mode, with rotatable conveyor poles (`R`).
+* **Multi-Floor Conveyor Lifts:** Place 2-step vertical **Conveyor Lifts** (`[8]` / `[V]`) that connect floors and check for shaft collisions across intermediate levels.
 * **True Load Balancers:** Automatically expands abstract graph splitters into physical `4m × 4m` Splitters and Mergers on the grid, including loopback lines for non-standard ratios.
-* **CAD & Alignment Tools:**
-  * **🏗 Auto-Floor:** Automatically fill foundations and corner pillars underneath all machines on the active floor.
-  * **📏 Side Elevation Panel:** Inspect the vertical profile of the current floor, showing the lowest/highest machine and calculating the optimal ceiling clearance in `4m` wall segments.
-  * **📏 CAD Ruler:** Measure exact distances in foundations and meters (`ΔX`, `ΔY`, and diagonal `L`).
-  * **↔ Row X / ↕ Col Y Alignment:** Snap selected machines into tight horizontal rows or vertical columns.
-  * **⚠ Real-Time Collision Detection:** Instant visual warnings when machine footprints or lift shafts overlap.
+* **CAD & Alignment Tools:** Auto-Floor foundation filling, Side Elevation height profile panel (in `4m` wall segments), CAD Ruler (`ΔX`, `ΔY`, diagonal `L`), Row/Column snapping (`G` / `Shift + G`), and real-time footprint collision warnings.
 
-### 📍 3. Interactive World Map Radar (Ores, Wells & Collectibles)
-* **Complete In-Game Coordinate Database:** View exact locations for all Resource Nodes (`Impure 0.5x`, `Normal 1.0x`, `Pure 2.0x`), Resource Wells, and Collectibles (**Hard Drives**, **Power Slugs**, **Mercer Spheres**, **Somersloops**).
-* **Double-Click to Spawn Miner:** Double-click (`2x LMB`) any ore deposit or resource well on the map to immediately spawn a pre-configured Miner/Extractor with the exact purity set.
-* **Progress Tracking:** Right-click (`RMB`) any deposit or collectible marker to mark it as **Used / Collected** (with an option to hide used markers).
-* **Customizable Map Backgrounds:** Switch between built-in world maps or load your own custom map/blueprint image (`.png`, `.jpg`, `.webp`) with adjustable scale and opacity.
+### 3. World Map Radar (Ores, Wells & Collectibles)
+* **In-Game Coordinate Database:** View locations for Resource Nodes (`Impure 0.5x`, `Normal 1.0x`, `Pure 2.0x`), Resource Wells, Hard Drives, Power Slugs, Mercer Spheres, and Somersloops.
+* **Double-Click to Spawn Miner:** Double-click (`2x LMB`) any deposit on the map to spawn a pre-configured Miner/Extractor with matching purity.
+* **Progress Tracking:** Right-click (`RMB`) any deposit or collectible marker to mark it as **Used / Collected**.
+* **Custom Map Backgrounds:** Load custom map or blueprint images (`.png`, `.jpg`, `.webp`) with adjustable scale and opacity.
 
-### 🪄 4. Auto-Chain Generator (Backwards Planner)
-* Pick any target item and desired output rate (`/min`), and let PSS calculate and spawn the entire upstream production chain automatically.
-* Optionally include raw resource Miners/Extractors and encapsulate the generated production line inside a dedicated **Factory** block.
+### 4. Auto-Chain Generator (Backwards Planner)
+* Select a target item and desired output rate (`/min`) to automatically calculate and spawn the entire upstream production chain, optionally including raw resource extractors and wrapping the chain in a dedicated Factory block.
 
-### 🚂 5. Multi-Platform Train & Truck Stations
-* **Train Stations (Up to 12 Platforms):** Add individual freight platforms (`Wagon #1` – `#12`) and link stations into multi-stop routes.
-* **Global Route Balancing:** Automatically tracks cargo across connected stations, displaying **Total**, **Taken**, and **Free** capacity per platform or mixed truck cargo pool.
-* **Fuel Validation:** Dedicated fuel ports for Truck Stations that accept only valid fuel items.
+### 5. Multi-Platform Train & Truck Stations
+* **Train Stations (Up to 12 Platforms):** Configure individual freight platforms (`Wagon #1` – `#12`), link stations into routes, and track **Total**, **Taken**, and **Free** capacity across connected stops.
+* **Truck Stations:** Dedicated fuel ports with valid fuel filtering and mixed cargo pool balancing.
 
-### ⚡ 6. Overclocking Assistant (OCA) & Somersloop Amplification
-* **Satisfactory 1.0 Somersloop Support:** Configure Somersloop slots per machine for up to `+100%` output amplification, accurately calculating the quadratic power multiplier `(1 + s/max)²`.
-* **4-Decimal Clock Precision:** Supports clock speeds from `0.0001%` to `250.0000%` using the official exponent (`1.321928`).
-* **One-Click OCA Presets:** Open the Overclocking Assistant on any machine to copy or apply **Power Saving** (equal clock), **Precision** (full `100%` machines + 1 underclocked), or **Space Saving** (`250%` max clock) configurations.
+### 6. Overclocking Assistant (OCA) & Somersloop Support
+* **Satisfactory 1.0 Somersloop Amplification:** Configure Somersloop slots per machine for up to `+100%` output amplification and accurate quadratic power scaling `(1 + s/max)²`.
+* **4-Decimal Clock Precision:** Supports clock speeds from `0.0001%` to `250.0000%` (`1.321928` exponent) with one-click presets for **Power Saving**, **Precision**, and **Space Saving**.
 
-### 📊 7. Analytics, Shopping List & Bottleneck Inspector
-* **⚠ Bottleneck & Overload Inspector:** Automatically scans all graphs for **Input Starvation** (machines receiving less than required) and **Belt/Pipe Overloads**, allowing you to jump the camera directly to the problematic node.
-* **🛒 Construction Planner & Shopping List:** Aggregates every unbuilt machine, foundation footprint, Power Shard, Somersloop, and building material (with an adjustable safety buffer slider and inventory stack calculator). Mark nodes as **✓ Built** on the graph to exclude them from the shopping list.
-* **📊 Global Production & AWESOME Sink Summary:** Monitors all items entering **Storage Containers**, **Dimensional Depots**, and **AWESOME Sinks**, calculating live **AWESOME Coupon points/min** based on official item point values.
-* **➕ Custom Recipe Manager:** Create, edit, and persist custom recipes (up to 4 inputs and 4 outputs, custom cycle time, and positive/negative MW power) for modded playthroughs.
-
+### 7. Analytics, Shopping List & Bottleneck Inspector
+* **Bottleneck & Overload Inspector:** Scans all graphs for input starvation and belt/pipe overloads with one-click camera jump to problematic nodes.
+* **Construction Planner & Shopping List:** Aggregates unbuilt machines, foundations, Power Shards, Somersloops, and building materials with an adjustable safety buffer and inventory stack calculator.
+* **Global Production & AWESOME Sink Summary:** Tracks items entering Storage Containers, Dimensional Depots, and AWESOME Sinks with live coupon point calculations.
+* **Custom Recipe Manager:** Create and save custom recipes (`user://custom_recipes.json`) for modded playthroughs.
 ---
 
-## 🌍 Localization & Language Status
+## Localization & Language Support
 
-**Pioneer's Spaghetti Solver** features a dual-layer localization system supporting **55 languages**:
-1. **In-Game Data Layer (`Game`):** Names of items, fluids, buildings, conveyor belts, pipelines, and recipes are loaded directly from localized game data dictionaries across all 55 supported languages.
-2. **Application Interface Layer (`UI`):** Menus, tooltips, modals, and CAD tools.
+PSS uses a two-layer localization system:
+1. **In-Game Item & Recipe Names (55 Languages):** Extracted directly from Satisfactory's localization dictionaries so you can search and view items, buildings, and recipes in your native in-game language.
+2. **Application UI:** Complete, human-verified interface translations for **English** and **Polish**, plus partial machine-translated UI strings for German, Spanish, Russian, and Chinese.
 
-| Language | Code | UI Status | Game Data (Items/Recipes) | Verification Status |
-| :--- | :---: | :---: | :---: | :--- |
-| **English** | `en-US` / `en-GB` | **100%** | **100%** | ✅ **Human-Verified** |
-| **Polish (Polski)** | `pl-PL` | **100%** | **100%** | ✅ **Human-Verified** |
-| **German (Deutsch)** | `de` | ~25% (Core UI) | **100%** | 🤖 AI-Translated |
-| **Spanish (Español)** | `es` | ~25% (Core UI) | **100%** | 🤖 AI-Translated |
-| **Russian (Русский)** | `ru` | ~25% (Core UI) | **100%** | 🤖 AI-Translated |
-| **Chinese (简体中文)** | `zh` | ~25% (Core UI) | **100%** | 🤖 AI-Translated |
-| **49 Other Languages** | *Various* | Fallback to `EN` | **100%** | No translation yet |
+| Language | Code | Application UI | In-Game Item & Recipe Names |
+| :--- | :---: | :---: | :---: |
+| **English** | `en-US` / `en-GB` | **100% (Verified)** | **100%** |
+| **Polish (Polski)** | `pl` | **100% (Verified)** | **100%** |
+| **German / Spanish / Russian / Chinese** | `de`, `es`, `ru`, `zh` | ~25% (Core UI, WIP) | **100%** |
+| **All Other Satisfactory Languages (49)** | *Various* | English UI Fallback | **100%** |
 
-> **🤖 Note on `[AI]` Tagged Languages:**  
-> Languages other than English and Polish are marked with an `[AI]` tag in the Settings menu. While all in-game recipe and item names are fully localized, UI translations for those languages are either partial or AI-assisted and may contain inaccuracies.
+### Contributing Translations
+To translate or improve the UI for your language:
+1. Open **Settings** in PSS and select your target language.
+2. Click **Export Full Translation Template** at the bottom of the Settings window.
+3. Edit the `"ui"` dictionary in `user://i18n_template_<lang>.json` and submit a Pull Request.
 
-### 🛠 How to Translate / Improve a Language
-Want to complete or fix the UI translation for your language?
-1. Open **⚙ Settings** in PSS and select your target language.
-2. Click **🌐 Export Full Translation Template** at the bottom of the Settings window.
-3. This generates a clean JSON file at `user://i18n_template_<lang>.json` containing all UI keys, buildings, items, and recipes.
-4. Edit the `"ui"` dictionary values and submit a Pull Request!
+## Controls & Keyboard Shortcuts
 
----
-
-## ⌨️ Controls & Keyboard Shortcuts
-
-### 🔗 Node Schematic Mode
+### Node Schematic Mode
 | Shortcut / Input | Action |
 | :--- | :--- |
 | **Right Mouse Button (RMB)** | Open Recipe / Node Search Popup (or disconnect wire on port) |
 | **Drag Wire to Empty Space** | Open context-filtered recipe search for that specific item |
 | **2× LMB / Shift + LMB on Wire** | Add a routing waypoint on a wire (`RMB` on waypoint = remove) |
 | **2× LMB on Map Deposit** | Spawn a pre-configured Miner on that resource node |
-| **RMB on Map Deposit** | Toggle **✓ Used / Collected** status on map marker |
-| **`L`** | Lock / Unlock selected nodes (prevents edits, deletion & auto-balance) |
+| **RMB on Map Deposit** | Toggle **Used / Collected** status on map marker |
+| **`L`** | Lock / Unlock selected nodes |
 | **`Delete` / `Backspace`** | Delete selected unlocked nodes |
 | **`Ctrl + G`** | Group selected nodes into a modular **Factory** sub-graph |
 | **`Ctrl + F`** | Open **World & Factory Navigator** |
-| **`Ctrl + C` / `Ctrl + V`** | Copy / Paste selected nodes and their internal connections |
-| **`Ctrl + Z` / `Ctrl + Y`** | Undo / Redo (`Ctrl + Shift + Z` also supported) |
+| **`Ctrl + C` / `Ctrl + V`** | Copy / Paste selected nodes and internal connections |
+| **`Ctrl + Z` / `Ctrl + Y`** | Undo / Redo (`Ctrl + Shift + Z` supported) |
 | **`Ctrl + S` / `Ctrl + O` / `Ctrl + N`** | Save Project (`.pss`) / Load Project / New Project |
 
-### 📐 2D Foundation Grid Mode (CAD)
+### 2D Foundation Grid Mode (CAD)
 | Shortcut / Input | Action |
 | :--- | :--- |
 | **`1` — `8`** | Select Tool: `[1]` Select, `[2]` Foundation, `[3]` Pillar, `[4]` Ruler, `[5/B]` Belt, `[6]` Splitter, `[7]` Merger, `[8/V]` Lift |
@@ -141,15 +119,14 @@ Want to complete or fix the UI translation for your language?
 | **`G` / `Shift + G`** | Align selected blocks into a horizontal row (`G`) or vertical column (`Shift + G`) |
 | **`L`** | Lock / Unlock position and rotation of selected/hovered blocks |
 | **`F`** | Quick-filter grid visibility by the hovered block's item (`RMB` on filter button clears) |
-
 ---
 
-## 🚀 Getting Started & Running from Source
+## Getting Started & Running from Source
 
-### 📥 Pre-built Releases
+### Pre-built Releases
 Download the latest standalone executable for your platform from the [**Releases**](https://github.com/TowarzyszFatCat/Pioneers-Spaghetti-Solver/releases) page. No installation required!
 
-### 🛠 Running / Building from Source
+### Running / Building from Source
 1. Download and install **Godot Engine 4.7+** (Standard version, GDScript).
 2. Clone this repository:
    ```bash
@@ -163,7 +140,7 @@ Download the latest standalone executable for your platform from the [**Releases
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Community contributions, bug fixes, UI translations, and feature improvements are very welcome!  
 Before submitting a Pull Request, please read [**CONTRIBUTING.md**](CONTRIBUTING.md) carefully:
@@ -176,15 +153,15 @@ Before submitting a Pull Request, please read [**CONTRIBUTING.md**](CONTRIBUTING
 
 ---
 
-## 📜 License & Disclaimer
+## License & Disclaimer
 
 * **License:** This project is licensed under the **Modified MIT License with Non-Commercial Clause** — see the [**LICENSE**](LICENSE) file for full details.
-  * ✅ You are free to use, copy, modify, fork, and distribute this software for **non-commercial** purposes.
-  * ❌ Commercial use, monetization, or paid distribution (including Steam, mobile stores, or paid services) by anyone other than the original copyright holder (**TowarzyszFatCat / ChonkChum**) is strictly prohibited.
+  * You are free to use, copy, modify, fork, and distribute this software for **non-commercial** purposes.
+  * Commercial use, monetization, or paid distribution (including Steam, mobile stores, or paid services) by anyone other than the original copyright holder (**TowarzyszFatCat / ChonkChum**) is strictly prohibited.
 * **Warranty Disclaimer:** This software is provided *"as is"*, without warranty of any kind, and may contain bugs or calculation inaccuracies.
 * **Affiliation Disclaimer:** *Pioneer's Spaghetti Solver* is an independent community-made tool and is not affiliated with, endorsed, or sponsored by **Coffee Stain Studios AB**. *Satisfactory* and all related game trademarks and assets belong to their respective owners.
 
-## ⚖️ Legal Notice & Assets Credit
+## Legal Notice & Assets Credit
 Pioneer's Spaghetti Solver is an unofficial, community-made fan project and is not affiliated with, endorsed by, or connected to **Coffee Stain Studios** in any way. 
 All in-game assets, item icons, and related graphics used within this software are the property and copyright of Coffee Stain Studios. Images were sourced via the [Official Satisfactory Wiki](https://satisfactory.wiki.gg/).
 This software is provided for free, non-commercial use by the Satisfactory community.
